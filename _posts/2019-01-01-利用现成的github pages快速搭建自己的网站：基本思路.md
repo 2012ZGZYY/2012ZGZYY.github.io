@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "新年的第一篇博客：利用现成的github pages快速搭建自己的网站"
+title:  "新年的第一篇博客：利用现成的github pages快速搭建自己的网站：基本思路"
 category: website
 date:   2019-01-01 13:00:00
 comments: true
