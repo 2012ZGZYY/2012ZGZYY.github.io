@@ -12,6 +12,8 @@
     <section class="post">
       {{ content }}
     </section>
+    
+    {% if page.comments == true %}
     <!--添加gitment评论插件-->
     <div id="container"></div>
     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
