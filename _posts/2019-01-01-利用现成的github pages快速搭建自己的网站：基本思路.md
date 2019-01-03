@@ -48,6 +48,7 @@ index.html：项目首页
 [Github+Jekyll添加评论支持](http://blog.csdn.net/ljinddlj/artical/details/52273652?utm_source=blogxgwz1)
 [Liquid语法](https://www.jianshu.com/p/4224b8ea0ec0)  
 [jekyll官方提供的一个博客编辑器](http://jekyllwriter.com/)  
+[使用hexo，如果换了电脑怎么更新博客？](https://www.zhihu.com/question/21193762)
 
   
 
