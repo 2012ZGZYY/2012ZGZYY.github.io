@@ -13,7 +13,7 @@
       {{ content }}
     </section>
     
-    {% if page.comments == "true" %}
+    {{% if page.comments %}}
     <!--添加gitment评论插件-->
     <div id="container"></div>
     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
@@ -31,7 +31,7 @@
     gitment.render('container')
     </script>
     <!--添加gitment评论插件 end-->
-    <% endif %>
+   
     
     <!--添加分享插件-->
     <div class="ds-share flat" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-images="{{ site.BASE_PATH }}/avatar.png" data-content="{{ page.title }}" data-url="{{ site.BASE_PATH }}{{ page.url }}">
