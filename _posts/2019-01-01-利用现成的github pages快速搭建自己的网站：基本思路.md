@@ -16,7 +16,7 @@ categories: Personal
 
 1.找到一个别人做好的github.io项目，比如[笔者的个人主页](http://github.com/2012ZGZYY/2012ZGZYY.github.io/)。可以看到我的这个项目下已经有了现成的搭建主页所需的所有文件。
 
-2.当你把别人的项目fork到你自己的github远端仓库中，此时在你自己的github主页下会多出这个项目及其项目文件，但此时其仓库名称还是别人的。为此，你需要把它改成你自己的，只要这样，github才能识别这是你的主页。修改名称在settings中修改。这样，这个主页项目就变成你的了，你可以在浏览器中输入域名：username.github.io，此时展现出的网页就是这个项目设计的主页。
+2.当你把别人的项目fork到你自己的github远端仓库中（为了尽可能不对原项目造成干扰，建议采用clone而非fork的方式），此时在你自己的github主页下会多出这个项目及其项目文件，但此时其仓库名称还是别人的。为此，你需要把它改成你自己的，只要这样，github才能识别这是你的主页。修改名称在settings中修改。这样，这个主页项目就变成你的了，你可以在浏览器中输入域名：username.github.io，此时展现出的网页就是这个项目设计的主页。
 
   *评注：以上两步实际上已经完成了整个个人主页的搭建，大概只需几分钟。其实github本身也提供了一些网页主题，如果你不想fork别人搭好的东西，你也可以先创建一个名为username.github.io的空仓库，然后在github-Settings-GitHub Pages-choose a theme中自己选择即可。*
 
@@ -33,3 +33,22 @@ categories: Personal
 2.前端知识，大概了解开源框架jekyll的结构。这使你明白应该如何修改编辑.html等文件并按自己的需求进行设计修改。如果你想要通过修改jekyll来自定义网站，那么你需要更深入地学习jekyll本身。比如，你很可能有必要在本地安装jekyll，只有这样你才能方便地在本地预览网页。这也是为什么有的教程里介绍了怎么安装配置jekyll，尽管这对于搭建站点而言并非必须的。    
 3.懂得如何使用markdown方式进行文档编辑。这是你写博客的方式。  
 4.基本的网络知识。这使你可以购买和配置自己的网站域名，使得别人能更容易地访问到你的主页。这也是为什么很多教程讲了自己购买、配置域名并将站点提交到百度谷歌的方法，虽然对于搭建个人网站本身而言这不是必须的。  
+
+关于jekyll（两大静态博客主流框架jekyll和hexo之一）：
+1.文件结构
+_config.yml：保存配置（jekyll会自动加载这些配置）
+_includes文件夹：存放可重复利用的文件，可被其他文件包含（{%include文件名%}），常用于在各个模板中复用如导航条、标签栏、侧边栏之类在每个页面上都一样的内容
+_layouts文件夹：存放模板文件（标签{{content}}将content插入页面中）
+assets：没特殊要求，主要用于存放资源文件如图片、样式表、脚本等
+_posts文件夹：存放博客文档
+index.html：项目首页
+
+更多高级操作：
+[基于Hexo搭建个人博客——进阶篇（从入门到入土）](https://yangbingdong.com/2017/build-blog-hexo-advanced/)  
+[Github+Jekyll添加评论支持](http://blog.csdn.net/ljinddlj/artical/details/52273652?utm_source=blogxgwz1)
+[Liquid语法](https://www.jianshu.com/p/4224b8ea0ec0)  
+[jekyll官方提供的一个博客编辑器](http://jekyllwriter.com/)  
+
+  
+
+
